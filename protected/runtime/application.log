@@ -1,0 +1,1041 @@
+2016/12/18 08:34:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "cyliderrate".' in E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController('cyliderrate')
+#1 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\xampp\htdocs\gasdelivery\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gasdelivery/index.php?r=cyliderrate
+---
+2016/12/18 14:48:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page".' in E:\xampp\htdocs\yii1117\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\yii1117\framework\web\CController.php(270): CController->missingAction('page')
+#1 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(282): CController->run('page')
+#2 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController('cylinderrate/pa...')
+#3 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 E:\xampp\htdocs\gasdelivery\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/gasdelivery/index.php?r=cylinderrate/page
+HTTP_REFERER=http://localhost/gasdelivery/index.php?r=client/index
+---
+2016/12/18 14:48:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page".' in E:\xampp\htdocs\yii1117\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\yii1117\framework\web\CController.php(270): CController->missingAction('page')
+#1 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(282): CController->run('page')
+#2 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController('cylinderrate/pa...')
+#3 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 E:\xampp\htdocs\gasdelivery\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/gasdelivery/index.php?r=cylinderrate/page
+HTTP_REFERER=http://localhost/gasdelivery/index.php?r=client/index
+---
+2016/12/18 15:01:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contact".' in E:\xampp\htdocs\yii1117\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\yii1117\framework\web\CController.php(270): CController->missingAction('contact')
+#1 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(282): CController->run('contact')
+#2 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController('deliveryboy/con...')
+#3 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 E:\xampp\htdocs\gasdelivery\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/gasdelivery/index.php?r=deliveryboy/contact
+HTTP_REFERER=http://localhost/gasdelivery/index.php?r=client/view&id=1
+---
+2016/12/18 15:39:25 [error] [php] Object of class cylinderrate could not be converted to string (E:\xampp\htdocs\yii1117\framework\web\helpers\CHtml.php:2543)
+Stack trace:
+#0 E:\xampp\htdocs\gasdelivery\protected\views\client\_form.php(55): CActiveForm->dropDownList()
+#1 E:\xampp\htdocs\yii1117\framework\web\CBaseController.php(126): require()
+#2 E:\xampp\htdocs\yii1117\framework\web\CBaseController.php(95): ClientController->renderInternal()
+#3 E:\xampp\htdocs\yii1117\framework\web\CController.php(869): ClientController->renderFile()
+#4 E:\xampp\htdocs\gasdelivery\protected\views\client\create.php(18): ClientController->renderPartial()
+#5 E:\xampp\htdocs\yii1117\framework\web\CBaseController.php(126): require()
+#6 E:\xampp\htdocs\yii1117\framework\web\CBaseController.php(95): ClientController->renderInternal()
+#7 E:\xampp\htdocs\yii1117\framework\web\CController.php(869): ClientController->renderFile()
+#8 E:\xampp\htdocs\yii1117\framework\web\CController.php(782): ClientController->renderPartial()
+#9 E:\xampp\htdocs\gasdelivery\protected\controllers\ClientController.php(79): ClientController->render()
+#10 E:\xampp\htdocs\yii1117\framework\web\actions\CInlineAction.php(49): ClientController->actionCreate()
+#11 E:\xampp\htdocs\yii1117\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(133): ClientController->runAction()
+#13 E:\xampp\htdocs\yii1117\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 E:\xampp\htdocs\yii1117\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#15 E:\xampp\htdocs\yii1117\framework\web\filters\CInlineFilter.php(58): ClientController->filterAccessControl()
+#16 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#17 E:\xampp\htdocs\yii1117\framework\web\CController.php(291): CFilterChain->run()
+#18 E:\xampp\htdocs\yii1117\framework\web\CController.php(265): ClientController->runActionWithFilters()
+#19 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(282): ClientController->run()
+#20 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#22 E:\xampp\htdocs\gasdelivery\index.php(13): CWebApplication->run()
+REQUEST_URI=/gasdelivery/index.php?r=client/create
+in E:\xampp\htdocs\gasdelivery\protected\views\client\_form.php (55)
+in E:\xampp\htdocs\gasdelivery\protected\views\client\create.php (18)
+in E:\xampp\htdocs\gasdelivery\protected\controllers\ClientController.php (79)
+2016/12/18 15:41:17 [error] [php] Object of class cylinderrate could not be converted to string (E:\xampp\htdocs\yii1117\framework\web\helpers\CHtml.php:2543)
+Stack trace:
+#0 E:\xampp\htdocs\gasdelivery\protected\views\client\_form.php(55): CActiveForm->dropDownList()
+#1 E:\xampp\htdocs\yii1117\framework\web\CBaseController.php(126): require()
+#2 E:\xampp\htdocs\yii1117\framework\web\CBaseController.php(95): ClientController->renderInternal()
+#3 E:\xampp\htdocs\yii1117\framework\web\CController.php(869): ClientController->renderFile()
+#4 E:\xampp\htdocs\gasdelivery\protected\views\client\create.php(18): ClientController->renderPartial()
+#5 E:\xampp\htdocs\yii1117\framework\web\CBaseController.php(126): require()
+#6 E:\xampp\htdocs\yii1117\framework\web\CBaseController.php(95): ClientController->renderInternal()
+#7 E:\xampp\htdocs\yii1117\framework\web\CController.php(869): ClientController->renderFile()
+#8 E:\xampp\htdocs\yii1117\framework\web\CController.php(782): ClientController->renderPartial()
+#9 E:\xampp\htdocs\gasdelivery\protected\controllers\ClientController.php(79): ClientController->render()
+#10 E:\xampp\htdocs\yii1117\framework\web\actions\CInlineAction.php(49): ClientController->actionCreate()
+#11 E:\xampp\htdocs\yii1117\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(133): ClientController->runAction()
+#13 E:\xampp\htdocs\yii1117\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 E:\xampp\htdocs\yii1117\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#15 E:\xampp\htdocs\yii1117\framework\web\filters\CInlineFilter.php(58): ClientController->filterAccessControl()
+#16 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#17 E:\xampp\htdocs\yii1117\framework\web\CController.php(291): CFilterChain->run()
+#18 E:\xampp\htdocs\yii1117\framework\web\CController.php(265): ClientController->runActionWithFilters()
+#19 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(282): ClientController->run()
+#20 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#22 E:\xampp\htdocs\gasdelivery\index.php(13): CWebApplication->run()
+REQUEST_URI=/gasdelivery/index.php?r=client/create
+in E:\xampp\htdocs\gasdelivery\protected\views\client\_form.php (55)
+in E:\xampp\htdocs\gasdelivery\protected\views\client\create.php (18)
+in E:\xampp\htdocs\gasdelivery\protected\controllers\ClientController.php (79)
+2016/12/22 19:39:12 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+' in E:\xampp\htdocs\yii1117\framework\db\CDbConnection.php:399
+Stack trace:
+#0 E:\xampp\htdocs\yii1117\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 E:\xampp\htdocs\yii1117\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 E:\xampp\htdocs\yii1117\framework\base\CModule.php(394): CDbConnection->init()
+#3 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(459): CModule->getComponent('db')
+#4 E:\xampp\htdocs\yii1117\framework\db\ar\CActiveRecord.php(637): CApplication->getDb()
+#5 E:\xampp\htdocs\yii1117\framework\db\ar\CActiveRecord.php(2386): CActiveRecord->getDbConnection()
+#6 E:\xampp\htdocs\yii1117\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(client))
+#7 E:\xampp\htdocs\yii1117\framework\db\ar\CActiveRecord.php(79): CActiveRecord->getMetaData()
+#8 E:\xampp\htdocs\gasdelivery\protected\controllers\ClientController.php(139): CActiveRecord->__construct('search')
+#9 E:\xampp\htdocs\gasdelivery\protected\controllers\ClientController.php(131): ClientController->actionAdmin()
+#10 E:\xampp\htdocs\yii1117\framework\web\actions\CInlineAction.php(49): ClientController->actionIndex()
+#11 E:\xampp\htdocs\yii1117\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 E:\xampp\htdocs\yii1117\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 E:\xampp\htdocs\yii1117\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 E:\xampp\htdocs\yii1117\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 E:\xampp\htdocs\yii1117\framework\web\CController.php(291): CFilterChain->run()
+#18 E:\xampp\htdocs\yii1117\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(282): CController->run('index')
+#20 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController('client/index')
+#21 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#22 E:\xampp\htdocs\gasdelivery\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/gasdelivery/index.php?r=client/index
+HTTP_REFERER=http://localhost/gasdelivery/
+---
+2016/12/22 19:43:23 [error] [exception.CException] exception 'CException' with message 'The column must be specified in the format of "Name:Type:Label", where "Type" and "Label" are optional.' in E:\xampp\htdocs\yii1117\framework\zii\widgets\grid\CGridView.php:412
+Stack trace:
+#0 E:\xampp\htdocs\yii1117\framework\zii\widgets\grid\CGridView.php(383): CGridView->createDataColumn('$price')
+#1 E:\xampp\htdocs\yii1117\framework\zii\widgets\grid\CGridView.php(359): CGridView->initColumns()
+#2 E:\xampp\htdocs\yii1117\framework\web\CBaseController.php(147): CGridView->init()
+#3 E:\xampp\htdocs\yii1117\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.gri...', Array)
+#4 E:\xampp\htdocs\gasdelivery\protected\views\cylinderrate\admin.php(55): CBaseController->widget('zii.widgets.gri...', Array)
+#5 E:\xampp\htdocs\yii1117\framework\web\CBaseController.php(126): require('E:\\xampp\\htdocs...')
+#6 E:\xampp\htdocs\yii1117\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\xampp\\htdocs...', Array, true)
+#7 E:\xampp\htdocs\yii1117\framework\web\CController.php(869): CBaseController->renderFile('E:\\xampp\\htdocs...', Array, true)
+#8 E:\xampp\htdocs\yii1117\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#9 E:\xampp\htdocs\gasdelivery\protected\controllers\CylinderrateController.php(146): CController->render('admin', Array)
+#10 E:\xampp\htdocs\gasdelivery\protected\controllers\CylinderrateController.php(131): CylinderrateController->actionAdmin()
+#11 E:\xampp\htdocs\yii1117\framework\web\actions\CInlineAction.php(49): CylinderrateController->actionIndex()
+#12 E:\xampp\htdocs\yii1117\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 E:\xampp\htdocs\yii1117\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 E:\xampp\htdocs\yii1117\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 E:\xampp\htdocs\yii1117\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 E:\xampp\htdocs\yii1117\framework\web\CController.php(291): CFilterChain->run()
+#19 E:\xampp\htdocs\yii1117\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(282): CController->run('index')
+#21 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController('cylinderrate/in...')
+#22 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 E:\xampp\htdocs\gasdelivery\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/gasdelivery/index.php?r=cylinderrate/index
+HTTP_REFERER=http://localhost/gasdelivery/index.php?r=cylinderrate/create
+---
+2016/12/26 17:26:14 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'venkatk, Your ordered gas will be delivered by Mr.Jayaraj. Please have this numb' at line 1. The SQL statement executed was: insert into sent_sms(sms_content) values( Hi venkatk, Your ordered gas will be delivered by Mr.Jayaraj. Please have this number for your delivery boy contact. Ct # : 9632602039).
+in E:\xampp\htdocs\gasdelivery\protected\models\sentsms.php (119)
+in E:\xampp\htdocs\gasdelivery\protected\models\sentsms.php (104)
+in E:\xampp\htdocs\gasdelivery\protected\controllers\SentsmsController.php (72)
+2016/12/26 17:26:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'venkatk, Your ordered gas will be delivered by Mr.Jayaraj. Please have this numb' at line 1. The SQL statement executed was: insert into sent_sms(sms_content) values( Hi venkatk, Your ordered gas will be delivered by Mr.Jayaraj. Please have this number for your delivery boy contact. Ct # : 9632602039)' in E:\xampp\htdocs\yii1117\framework\db\CDbCommand.php:543
+Stack trace:
+#0 E:\xampp\htdocs\yii1117\framework\db\CDbCommand.php(377): CDbCommand->queryInternal('', 0, Array)
+#1 E:\xampp\htdocs\gasdelivery\protected\models\sentsms.php(119): CDbCommand->query()
+#2 E:\xampp\htdocs\gasdelivery\protected\models\sentsms.php(104): sentsms->insert_sentsms_details(' Hi venkatk, Yo...')
+#3 E:\xampp\htdocs\gasdelivery\protected\controllers\SentsmsController.php(72): sentsms->sendsms(Array)
+#4 E:\xampp\htdocs\gasdelivery\protected\controllers\SentsmsController.php(126): SentsmsController->actionCreate()
+#5 E:\xampp\htdocs\yii1117\framework\web\actions\CInlineAction.php(49): SentsmsController->actionIndex()
+#6 E:\xampp\htdocs\yii1117\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 E:\xampp\htdocs\yii1117\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 E:\xampp\htdocs\yii1117\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 E:\xampp\htdocs\yii1117\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 E:\xampp\htdocs\yii1117\framework\web\CController.php(291): CFilterChain->run()
+#13 E:\xampp\htdocs\yii1117\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(282): CController->run('')
+#15 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController('sentsms')
+#16 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 E:\xampp\htdocs\gasdelivery\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/gasdelivery/index.php?r=sentsms
+HTTP_REFERER=http://localhost/gasdelivery/index.php?r=sentsms
+---
+2016/12/26 17:34:09 [error] [exception.CException] exception 'CException' with message 'Property "sentsms.A" is not defined.' in E:\xampp\htdocs\yii1117\framework\base\CComponent.php:130
+Stack trace:
+#0 E:\xampp\htdocs\yii1117\framework\db\ar\CActiveRecord.php(145): CComponent->__get('A')
+#1 E:\xampp\htdocs\yii1117\framework\web\helpers\CHtml.php(2729): CActiveRecord->__get('A')
+#2 E:\xampp\htdocs\yii1117\framework\web\helpers\CHtml.php(2452): CHtml::resolveValue(Object(sentsms), 'A')
+#3 E:\xampp\htdocs\yii1117\framework\web\helpers\CHtml.php(1534): CHtml::activeInputField('text', Object(sentsms), 'A', Array)
+#4 E:\xampp\htdocs\yii1117\framework\zii\widgets\grid\CDataColumn.php(104): CHtml::activeTextField(Object(sentsms), 'A', Array)
+#5 E:\xampp\htdocs\yii1117\framework\zii\widgets\grid\CGridColumn.php(253): CDataColumn->getFilterCellContent()
+#6 E:\xampp\htdocs\yii1117\framework\zii\widgets\grid\CGridColumn.php(119): CGridColumn->renderFilterCellContent()
+#7 E:\xampp\htdocs\yii1117\framework\zii\widgets\grid\CGridView.php(538): CGridColumn->renderFilterCell()
+#8 E:\xampp\htdocs\yii1117\framework\zii\widgets\grid\CGridView.php(516): CGridView->renderFilter()
+#9 E:\xampp\htdocs\yii1117\framework\zii\widgets\grid\CGridView.php(486): CGridView->renderTableHeader()
+#10 E:\xampp\htdocs\yii1117\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#11 [internal function]: CBaseListView->renderSection(Array)
+#12 E:\xampp\htdocs\yii1117\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{item...')
+#13 E:\xampp\htdocs\yii1117\framework\zii\widgets\CBaseListView.php(149): CBaseListView->renderContent()
+#14 E:\xampp\htdocs\yii1117\framework\web\CBaseController.php(181): CBaseListView->run()
+#15 E:\xampp\htdocs\gasdelivery\protected\views\sentsms\admin.php(54): CBaseController->widget('zii.widgets.gri...', Array)
+#16 E:\xampp\htdocs\yii1117\framework\web\CBaseController.php(126): require('E:\\xampp\\htdocs...')
+#17 E:\xampp\htdocs\yii1117\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\xampp\\htdocs...', Array, true)
+#18 E:\xampp\htdocs\yii1117\framework\web\CController.php(869): CBaseController->renderFile('E:\\xampp\\htdocs...', Array, true)
+#19 E:\xampp\htdocs\yii1117\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#20 E:\xampp\htdocs\gasdelivery\protected\controllers\SentsmsController.php(145): CController->render('admin', Array)
+#21 E:\xampp\htdocs\yii1117\framework\web\actions\CInlineAction.php(49): SentsmsController->actionAdmin()
+#22 E:\xampp\htdocs\yii1117\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#23 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#24 E:\xampp\htdocs\yii1117\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#25 E:\xampp\htdocs\yii1117\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#26 E:\xampp\htdocs\yii1117\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#27 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#28 E:\xampp\htdocs\yii1117\framework\web\CController.php(291): CFilterChain->run()
+#29 E:\xampp\htdocs\yii1117\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#30 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(282): CController->run('admin')
+#31 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController('sentsms/admin')
+#32 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#33 E:\xampp\htdocs\gasdelivery\index.php(13): CApplication->run()
+#34 {main}
+REQUEST_URI=/gasdelivery/index.php?r=sentsms/admin
+HTTP_REFERER=http://localhost/gasdelivery/index.php?r=sentsms/index
+---
+2016/12/26 17:34:39 [error] [exception.CException] exception 'CException' with message 'Property "sentsms.asdsA" is not defined.' in E:\xampp\htdocs\yii1117\framework\base\CComponent.php:130
+Stack trace:
+#0 E:\xampp\htdocs\yii1117\framework\db\ar\CActiveRecord.php(145): CComponent->__get('asdsA')
+#1 E:\xampp\htdocs\yii1117\framework\web\helpers\CHtml.php(2729): CActiveRecord->__get('asdsA')
+#2 E:\xampp\htdocs\yii1117\framework\web\helpers\CHtml.php(2452): CHtml::resolveValue(Object(sentsms), 'asdsA')
+#3 E:\xampp\htdocs\yii1117\framework\web\helpers\CHtml.php(1534): CHtml::activeInputField('text', Object(sentsms), 'asdsA', Array)
+#4 E:\xampp\htdocs\yii1117\framework\zii\widgets\grid\CDataColumn.php(104): CHtml::activeTextField(Object(sentsms), 'asdsA', Array)
+#5 E:\xampp\htdocs\yii1117\framework\zii\widgets\grid\CGridColumn.php(253): CDataColumn->getFilterCellContent()
+#6 E:\xampp\htdocs\yii1117\framework\zii\widgets\grid\CGridColumn.php(119): CGridColumn->renderFilterCellContent()
+#7 E:\xampp\htdocs\yii1117\framework\zii\widgets\grid\CGridView.php(538): CGridColumn->renderFilterCell()
+#8 E:\xampp\htdocs\yii1117\framework\zii\widgets\grid\CGridView.php(516): CGridView->renderFilter()
+#9 E:\xampp\htdocs\yii1117\framework\zii\widgets\grid\CGridView.php(486): CGridView->renderTableHeader()
+#10 E:\xampp\htdocs\yii1117\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#11 [internal function]: CBaseListView->renderSection(Array)
+#12 E:\xampp\htdocs\yii1117\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{item...')
+#13 E:\xampp\htdocs\yii1117\framework\zii\widgets\CBaseListView.php(149): CBaseListView->renderContent()
+#14 E:\xampp\htdocs\yii1117\framework\web\CBaseController.php(181): CBaseListView->run()
+#15 E:\xampp\htdocs\gasdelivery\protected\views\sentsms\admin.php(54): CBaseController->widget('zii.widgets.gri...', Array)
+#16 E:\xampp\htdocs\yii1117\framework\web\CBaseController.php(126): require('E:\\xampp\\htdocs...')
+#17 E:\xampp\htdocs\yii1117\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\xampp\\htdocs...', Array, true)
+#18 E:\xampp\htdocs\yii1117\framework\web\CController.php(869): CBaseController->renderFile('E:\\xampp\\htdocs...', Array, true)
+#19 E:\xampp\htdocs\yii1117\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#20 E:\xampp\htdocs\gasdelivery\protected\controllers\SentsmsController.php(145): CController->render('admin', Array)
+#21 E:\xampp\htdocs\yii1117\framework\web\actions\CInlineAction.php(49): SentsmsController->actionAdmin()
+#22 E:\xampp\htdocs\yii1117\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#23 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#24 E:\xampp\htdocs\yii1117\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#25 E:\xampp\htdocs\yii1117\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#26 E:\xampp\htdocs\yii1117\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#27 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#28 E:\xampp\htdocs\yii1117\framework\web\CController.php(291): CFilterChain->run()
+#29 E:\xampp\htdocs\yii1117\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#30 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(282): CController->run('admin')
+#31 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController('sentsms/admin')
+#32 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#33 E:\xampp\htdocs\gasdelivery\index.php(13): CApplication->run()
+#34 {main}
+REQUEST_URI=/gasdelivery/index.php?r=sentsms/admin
+HTTP_REFERER=http://localhost/gasdelivery/index.php?r=sentsms/index
+---
+2016/12/26 17:35:10 [error] [php] Use of undefined constant status - assumed 'status' (E:\xampp\htdocs\gasdelivery\protected\views\sentsms\admin.php:49)
+Stack trace:
+#0 E:\xampp\htdocs\yii1117\framework\web\CController.php(869): SentsmsController->renderFile()
+#1 E:\xampp\htdocs\yii1117\framework\web\CController.php(782): SentsmsController->renderPartial()
+#2 E:\xampp\htdocs\gasdelivery\protected\controllers\SentsmsController.php(145): SentsmsController->render()
+#3 E:\xampp\htdocs\yii1117\framework\web\actions\CInlineAction.php(49): SentsmsController->actionAdmin()
+#4 E:\xampp\htdocs\yii1117\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(133): SentsmsController->runAction()
+#6 E:\xampp\htdocs\yii1117\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\xampp\htdocs\yii1117\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 E:\xampp\htdocs\yii1117\framework\web\filters\CInlineFilter.php(58): SentsmsController->filterAccessControl()
+#9 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 E:\xampp\htdocs\yii1117\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\xampp\htdocs\yii1117\framework\web\CController.php(265): SentsmsController->runActionWithFilters()
+#12 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(282): SentsmsController->run()
+#13 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 E:\xampp\htdocs\gasdelivery\index.php(13): CWebApplication->run()
+REQUEST_URI=/gasdelivery/index.php?r=sentsms/admin
+in E:\xampp\htdocs\gasdelivery\protected\views\sentsms\admin.php (49)
+in E:\xampp\htdocs\gasdelivery\protected\controllers\SentsmsController.php (145)
+in E:\xampp\htdocs\gasdelivery\index.php (13)
+2016/12/26 17:35:29 [error] [php] Undefined variable: mode (E:\xampp\htdocs\gasdelivery\protected\views\sentsms\admin.php:49)
+Stack trace:
+#0 E:\xampp\htdocs\yii1117\framework\web\CController.php(869): SentsmsController->renderFile()
+#1 E:\xampp\htdocs\yii1117\framework\web\CController.php(782): SentsmsController->renderPartial()
+#2 E:\xampp\htdocs\gasdelivery\protected\controllers\SentsmsController.php(145): SentsmsController->render()
+#3 E:\xampp\htdocs\yii1117\framework\web\actions\CInlineAction.php(49): SentsmsController->actionAdmin()
+#4 E:\xampp\htdocs\yii1117\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(133): SentsmsController->runAction()
+#6 E:\xampp\htdocs\yii1117\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\xampp\htdocs\yii1117\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 E:\xampp\htdocs\yii1117\framework\web\filters\CInlineFilter.php(58): SentsmsController->filterAccessControl()
+#9 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 E:\xampp\htdocs\yii1117\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\xampp\htdocs\yii1117\framework\web\CController.php(265): SentsmsController->runActionWithFilters()
+#12 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(282): SentsmsController->run()
+#13 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 E:\xampp\htdocs\gasdelivery\index.php(13): CWebApplication->run()
+REQUEST_URI=/gasdelivery/index.php?r=sentsms/admin
+in E:\xampp\htdocs\gasdelivery\protected\views\sentsms\admin.php (49)
+in E:\xampp\htdocs\gasdelivery\protected\controllers\SentsmsController.php (145)
+in E:\xampp\htdocs\gasdelivery\index.php (13)
+2016/12/26 17:35:42 [error] [exception.CException] exception 'CException' with message 'Either "name" or "value" must be specified for CDataColumn.' in E:\xampp\htdocs\yii1117\framework\zii\widgets\grid\CDataColumn.php:84
+Stack trace:
+#0 E:\xampp\htdocs\yii1117\framework\zii\widgets\grid\CGridView.php(401): CDataColumn->init()
+#1 E:\xampp\htdocs\yii1117\framework\zii\widgets\grid\CGridView.php(359): CGridView->initColumns()
+#2 E:\xampp\htdocs\yii1117\framework\web\CBaseController.php(147): CGridView->init()
+#3 E:\xampp\htdocs\yii1117\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.gri...', Array)
+#4 E:\xampp\htdocs\gasdelivery\protected\views\sentsms\admin.php(54): CBaseController->widget('zii.widgets.gri...', Array)
+#5 E:\xampp\htdocs\yii1117\framework\web\CBaseController.php(126): require('E:\\xampp\\htdocs...')
+#6 E:\xampp\htdocs\yii1117\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\xampp\\htdocs...', Array, true)
+#7 E:\xampp\htdocs\yii1117\framework\web\CController.php(869): CBaseController->renderFile('E:\\xampp\\htdocs...', Array, true)
+#8 E:\xampp\htdocs\yii1117\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#9 E:\xampp\htdocs\gasdelivery\protected\controllers\SentsmsController.php(145): CController->render('admin', Array)
+#10 E:\xampp\htdocs\yii1117\framework\web\actions\CInlineAction.php(49): SentsmsController->actionAdmin()
+#11 E:\xampp\htdocs\yii1117\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 E:\xampp\htdocs\yii1117\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 E:\xampp\htdocs\yii1117\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 E:\xampp\htdocs\yii1117\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 E:\xampp\htdocs\yii1117\framework\web\CController.php(291): CFilterChain->run()
+#18 E:\xampp\htdocs\yii1117\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(282): CController->run('admin')
+#20 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController('sentsms/admin')
+#21 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#22 E:\xampp\htdocs\gasdelivery\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/gasdelivery/index.php?r=sentsms/admin
+HTTP_REFERER=http://localhost/gasdelivery/index.php?r=sentsms/index
+---
+2016/12/26 17:46:32 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'asd' in 'where clause'. The SQL statement executed was: SELECT cl.client_name, cl.mobile_number, cl.address, cr.price, db.delivery_boy_name, db.contact_number from client cl JOIN cylinder_rate cr ON( cr.id = cl.type_of_cylinder) join area ar on( ar.id = cl.area) JOIN delivery_boy db ON( db.assigned_area = cl.area) where cl.consumer_number IN(asd).
+in E:\xampp\htdocs\gasdelivery\protected\models\sentsms.php (96)
+in E:\xampp\htdocs\gasdelivery\protected\controllers\SentsmsController.php (72)
+in E:\xampp\htdocs\gasdelivery\index.php (13)
+2016/12/26 17:46:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'asd' in 'where clause'. The SQL statement executed was: SELECT cl.client_name, cl.mobile_number, cl.address, cr.price, db.delivery_boy_name, db.contact_number from client cl JOIN cylinder_rate cr ON( cr.id = cl.type_of_cylinder) join area ar on( ar.id = cl.area) JOIN delivery_boy db ON( db.assigned_area = cl.area) where cl.consumer_number IN(asd)' in E:\xampp\htdocs\yii1117\framework\db\CDbCommand.php:543
+Stack trace:
+#0 E:\xampp\htdocs\yii1117\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 E:\xampp\htdocs\gasdelivery\protected\models\sentsms.php(96): CDbCommand->queryAll()
+#2 E:\xampp\htdocs\gasdelivery\protected\controllers\SentsmsController.php(72): sentsms->sendsms(Array)
+#3 E:\xampp\htdocs\yii1117\framework\web\actions\CInlineAction.php(49): SentsmsController->actionCreate()
+#4 E:\xampp\htdocs\yii1117\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 E:\xampp\htdocs\yii1117\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\xampp\htdocs\yii1117\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 E:\xampp\htdocs\yii1117\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 E:\xampp\htdocs\yii1117\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\xampp\htdocs\yii1117\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(282): CController->run('create')
+#13 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController('sentsms/create')
+#14 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 E:\xampp\htdocs\gasdelivery\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/gasdelivery/index.php?r=sentsms/create
+HTTP_REFERER=http://localhost/gasdelivery/index.php?r=sentsms/create
+---
+2016/12/26 17:51:11 [error] [exception.CException] exception 'CException' with message 'Property "CDataColumn.0" is not defined.' in E:\xampp\htdocs\yii1117\framework\base\CComponent.php:173
+Stack trace:
+#0 E:\xampp\htdocs\yii1117\framework\YiiBase.php(220): CComponent->__set('0', Object(SentsmsController))
+#1 E:\xampp\htdocs\yii1117\framework\zii\widgets\grid\CGridView.php(388): YiiBase::createComponent(Array, Object(CGridView))
+#2 E:\xampp\htdocs\yii1117\framework\zii\widgets\grid\CGridView.php(359): CGridView->initColumns()
+#3 E:\xampp\htdocs\yii1117\framework\web\CBaseController.php(147): CGridView->init()
+#4 E:\xampp\htdocs\yii1117\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 E:\xampp\htdocs\gasdelivery\protected\views\sentsms\admin.php(54): CBaseController->widget('zii.widgets.gri...', Array)
+#6 E:\xampp\htdocs\yii1117\framework\web\CBaseController.php(126): require('E:\\xampp\\htdocs...')
+#7 E:\xampp\htdocs\yii1117\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\xampp\\htdocs...', Array, true)
+#8 E:\xampp\htdocs\yii1117\framework\web\CController.php(869): CBaseController->renderFile('E:\\xampp\\htdocs...', Array, true)
+#9 E:\xampp\htdocs\yii1117\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#10 E:\xampp\htdocs\gasdelivery\protected\controllers\SentsmsController.php(153): CController->render('admin', Array)
+#11 E:\xampp\htdocs\yii1117\framework\web\actions\CInlineAction.php(49): SentsmsController->actionAdmin()
+#12 E:\xampp\htdocs\yii1117\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 E:\xampp\htdocs\yii1117\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 E:\xampp\htdocs\yii1117\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 E:\xampp\htdocs\yii1117\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 E:\xampp\htdocs\yii1117\framework\web\CController.php(291): CFilterChain->run()
+#19 E:\xampp\htdocs\yii1117\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(282): CController->run('admin')
+#21 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController('sentsms/admin')
+#22 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 E:\xampp\htdocs\gasdelivery\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/gasdelivery/index.php?r=sentsms/admin
+HTTP_REFERER=http://localhost/gasdelivery/index.php?r=sentsms/create
+---
+2016/12/26 17:52:48 [error] [exception.CException] exception 'CException' with message 'Property "CDataColumn.status" is not defined.' in E:\xampp\htdocs\yii1117\framework\base\CComponent.php:173
+Stack trace:
+#0 E:\xampp\htdocs\yii1117\framework\YiiBase.php(220): CComponent->__set('status', Array)
+#1 E:\xampp\htdocs\yii1117\framework\zii\widgets\grid\CGridView.php(388): YiiBase::createComponent(Array, Object(CGridView))
+#2 E:\xampp\htdocs\yii1117\framework\zii\widgets\grid\CGridView.php(359): CGridView->initColumns()
+#3 E:\xampp\htdocs\yii1117\framework\web\CBaseController.php(147): CGridView->init()
+#4 E:\xampp\htdocs\yii1117\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 E:\xampp\htdocs\gasdelivery\protected\views\sentsms\admin.php(57): CBaseController->widget('zii.widgets.gri...', Array)
+#6 E:\xampp\htdocs\yii1117\framework\web\CBaseController.php(126): require('E:\\xampp\\htdocs...')
+#7 E:\xampp\htdocs\yii1117\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\xampp\\htdocs...', Array, true)
+#8 E:\xampp\htdocs\yii1117\framework\web\CController.php(869): CBaseController->renderFile('E:\\xampp\\htdocs...', Array, true)
+#9 E:\xampp\htdocs\yii1117\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#10 E:\xampp\htdocs\gasdelivery\protected\controllers\SentsmsController.php(153): CController->render('admin', Array)
+#11 E:\xampp\htdocs\yii1117\framework\web\actions\CInlineAction.php(49): SentsmsController->actionAdmin()
+#12 E:\xampp\htdocs\yii1117\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 E:\xampp\htdocs\yii1117\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 E:\xampp\htdocs\yii1117\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 E:\xampp\htdocs\yii1117\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 E:\xampp\htdocs\yii1117\framework\web\CController.php(291): CFilterChain->run()
+#19 E:\xampp\htdocs\yii1117\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(282): CController->run('admin')
+#21 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController('sentsms/admin')
+#22 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 E:\xampp\htdocs\gasdelivery\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/gasdelivery/index.php?r=sentsms/admin
+HTTP_REFERER=http://localhost/gasdelivery/index.php?r=sentsms/create
+---
+2016/12/27 18:52:54 [error] [php] fopen(): Content-type not specified assuming application/x-www-form-urlencoded (E:\xampp\htdocs\gasdelivery\protected\models\sentsms.php:148)
+Stack trace:
+#0 E:\xampp\htdocs\gasdelivery\protected\controllers\SentsmsController.php(72): sentsms->sendsms()
+#1 E:\xampp\htdocs\yii1117\framework\web\actions\CInlineAction.php(49): SentsmsController->actionCreate()
+#2 E:\xampp\htdocs\yii1117\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(133): SentsmsController->runAction()
+#4 E:\xampp\htdocs\yii1117\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 E:\xampp\htdocs\yii1117\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 E:\xampp\htdocs\yii1117\framework\web\filters\CInlineFilter.php(58): SentsmsController->filterAccessControl()
+#7 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 E:\xampp\htdocs\yii1117\framework\web\CController.php(291): CFilterChain->run()
+#9 E:\xampp\htdocs\yii1117\framework\web\CController.php(265): SentsmsController->runActionWithFilters()
+#10 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(282): SentsmsController->run()
+#11 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 E:\xampp\htdocs\gasdelivery\index.php(13): CWebApplication->run()
+REQUEST_URI=/gasdelivery/index.php?r=sentsms/create
+in E:\xampp\htdocs\gasdelivery\protected\models\sentsms.php (148)
+in E:\xampp\htdocs\gasdelivery\protected\models\sentsms.php (101)
+in E:\xampp\htdocs\gasdelivery\protected\controllers\SentsmsController.php (72)
+2016/12/27 19:04:01 [error] [php] fopen(): Content-type not specified assuming application/x-www-form-urlencoded (E:\xampp\htdocs\gasdelivery\protected\models\sentsms.php:149)
+Stack trace:
+#0 E:\xampp\htdocs\gasdelivery\protected\controllers\SentsmsController.php(72): sentsms->sendsms()
+#1 E:\xampp\htdocs\yii1117\framework\web\actions\CInlineAction.php(49): SentsmsController->actionCreate()
+#2 E:\xampp\htdocs\yii1117\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(133): SentsmsController->runAction()
+#4 E:\xampp\htdocs\yii1117\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 E:\xampp\htdocs\yii1117\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 E:\xampp\htdocs\yii1117\framework\web\filters\CInlineFilter.php(58): SentsmsController->filterAccessControl()
+#7 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 E:\xampp\htdocs\yii1117\framework\web\CController.php(291): CFilterChain->run()
+#9 E:\xampp\htdocs\yii1117\framework\web\CController.php(265): SentsmsController->runActionWithFilters()
+#10 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(282): SentsmsController->run()
+#11 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 E:\xampp\htdocs\gasdelivery\index.php(13): CWebApplication->run()
+REQUEST_URI=/gasdelivery/index.php?r=sentsms/create
+in E:\xampp\htdocs\gasdelivery\protected\models\sentsms.php (149)
+in E:\xampp\htdocs\gasdelivery\protected\models\sentsms.php (101)
+in E:\xampp\htdocs\gasdelivery\protected\controllers\SentsmsController.php (72)
+2016/12/27 19:04:31 [error] [php] fopen(): Content-type not specified assuming application/x-www-form-urlencoded (E:\xampp\htdocs\gasdelivery\protected\models\sentsms.php:149)
+Stack trace:
+#0 E:\xampp\htdocs\gasdelivery\protected\controllers\SentsmsController.php(72): sentsms->sendsms()
+#1 E:\xampp\htdocs\yii1117\framework\web\actions\CInlineAction.php(49): SentsmsController->actionCreate()
+#2 E:\xampp\htdocs\yii1117\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(133): SentsmsController->runAction()
+#4 E:\xampp\htdocs\yii1117\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 E:\xampp\htdocs\yii1117\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 E:\xampp\htdocs\yii1117\framework\web\filters\CInlineFilter.php(58): SentsmsController->filterAccessControl()
+#7 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 E:\xampp\htdocs\yii1117\framework\web\CController.php(291): CFilterChain->run()
+#9 E:\xampp\htdocs\yii1117\framework\web\CController.php(265): SentsmsController->runActionWithFilters()
+#10 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(282): SentsmsController->run()
+#11 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 E:\xampp\htdocs\gasdelivery\index.php(13): CWebApplication->run()
+REQUEST_URI=/gasdelivery/index.php?r=sentsms/create
+in E:\xampp\htdocs\gasdelivery\protected\models\sentsms.php (149)
+in E:\xampp\htdocs\gasdelivery\protected\models\sentsms.php (101)
+in E:\xampp\htdocs\gasdelivery\protected\controllers\SentsmsController.php (72)
+2016/12/27 19:05:51 [error] [php] fopen(): Content-type not specified assuming application/x-www-form-urlencoded (E:\xampp\htdocs\gasdelivery\protected\models\sentsms.php:149)
+Stack trace:
+#0 E:\xampp\htdocs\gasdelivery\protected\controllers\SentsmsController.php(72): sentsms->sendsms()
+#1 E:\xampp\htdocs\yii1117\framework\web\actions\CInlineAction.php(49): SentsmsController->actionCreate()
+#2 E:\xampp\htdocs\yii1117\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(133): SentsmsController->runAction()
+#4 E:\xampp\htdocs\yii1117\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 E:\xampp\htdocs\yii1117\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 E:\xampp\htdocs\yii1117\framework\web\filters\CInlineFilter.php(58): SentsmsController->filterAccessControl()
+#7 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 E:\xampp\htdocs\yii1117\framework\web\CController.php(291): CFilterChain->run()
+#9 E:\xampp\htdocs\yii1117\framework\web\CController.php(265): SentsmsController->runActionWithFilters()
+#10 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(282): SentsmsController->run()
+#11 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 E:\xampp\htdocs\gasdelivery\index.php(13): CWebApplication->run()
+REQUEST_URI=/gasdelivery/index.php?r=sentsms/create
+in E:\xampp\htdocs\gasdelivery\protected\models\sentsms.php (149)
+in E:\xampp\htdocs\gasdelivery\protected\models\sentsms.php (101)
+in E:\xampp\htdocs\gasdelivery\protected\controllers\SentsmsController.php (72)
+2016/12/27 19:10:19 [error] [php] fopen(): Content-type not specified assuming application/x-www-form-urlencoded (E:\xampp\htdocs\gasdelivery\protected\models\sentsms.php:149)
+Stack trace:
+#0 E:\xampp\htdocs\gasdelivery\protected\controllers\SentsmsController.php(72): sentsms->sendsms()
+#1 E:\xampp\htdocs\yii1117\framework\web\actions\CInlineAction.php(49): SentsmsController->actionCreate()
+#2 E:\xampp\htdocs\yii1117\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(133): SentsmsController->runAction()
+#4 E:\xampp\htdocs\yii1117\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 E:\xampp\htdocs\yii1117\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 E:\xampp\htdocs\yii1117\framework\web\filters\CInlineFilter.php(58): SentsmsController->filterAccessControl()
+#7 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 E:\xampp\htdocs\yii1117\framework\web\CController.php(291): CFilterChain->run()
+#9 E:\xampp\htdocs\yii1117\framework\web\CController.php(265): SentsmsController->runActionWithFilters()
+#10 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(282): SentsmsController->run()
+#11 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 E:\xampp\htdocs\gasdelivery\index.php(13): CWebApplication->run()
+REQUEST_URI=/gasdelivery/index.php?r=sentsms/create
+in E:\xampp\htdocs\gasdelivery\protected\models\sentsms.php (149)
+in E:\xampp\htdocs\gasdelivery\protected\models\sentsms.php (101)
+in E:\xampp\htdocs\gasdelivery\protected\controllers\SentsmsController.php (72)
+2016/12/27 19:15:05 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'not valid where id = Sorry, senderid not valid' at line 1. The SQL statement executed was: update sent_sms set comment = Sorry, senderid not valid where id = Sorry, senderid not valid.
+in E:\xampp\htdocs\gasdelivery\protected\models\sentsms.php (181)
+in E:\xampp\htdocs\gasdelivery\protected\models\sentsms.php (164)
+in E:\xampp\htdocs\gasdelivery\protected\models\sentsms.php (101)
+2016/12/27 19:15:05 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'not valid where id = Sorry, senderid not valid' at line 1. The SQL statement executed was: update sent_sms set comment = Sorry, senderid not valid where id = Sorry, senderid not valid' in E:\xampp\htdocs\yii1117\framework\db\CDbCommand.php:543
+Stack trace:
+#0 E:\xampp\htdocs\yii1117\framework\db\CDbCommand.php(377): CDbCommand->queryInternal('', 0, Array)
+#1 E:\xampp\htdocs\gasdelivery\protected\models\sentsms.php(181): CDbCommand->query()
+#2 E:\xampp\htdocs\gasdelivery\protected\models\sentsms.php(164): sentsms->update_message_response(Object(CDbDataReader), 'Sorry, senderid...')
+#3 E:\xampp\htdocs\gasdelivery\protected\models\sentsms.php(101): sentsms->send_sms_api('9600934808', 'venkat', 'Delphin', '500', '9632602039')
+#4 E:\xampp\htdocs\gasdelivery\protected\controllers\SentsmsController.php(72): sentsms->sendsms(Array)
+#5 E:\xampp\htdocs\yii1117\framework\web\actions\CInlineAction.php(49): SentsmsController->actionCreate()
+#6 E:\xampp\htdocs\yii1117\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 E:\xampp\htdocs\yii1117\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 E:\xampp\htdocs\yii1117\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 E:\xampp\htdocs\yii1117\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 E:\xampp\htdocs\yii1117\framework\web\CController.php(291): CFilterChain->run()
+#13 E:\xampp\htdocs\yii1117\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(282): CController->run('create')
+#15 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController('sentsms/create')
+#16 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 E:\xampp\htdocs\gasdelivery\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/gasdelivery/index.php?r=sentsms/create
+HTTP_REFERER=http://localhost/gasdelivery/index.php?r=sentsms/create
+---
+2016/12/27 19:15:56 [error] [php] Object of class CDbDataReader could not be converted to string (E:\xampp\htdocs\gasdelivery\protected\models\sentsms.php:179)
+Stack trace:
+#0 E:\xampp\htdocs\gasdelivery\protected\controllers\SentsmsController.php(72): sentsms->sendsms()
+#1 E:\xampp\htdocs\yii1117\framework\web\actions\CInlineAction.php(49): SentsmsController->actionCreate()
+#2 E:\xampp\htdocs\yii1117\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(133): SentsmsController->runAction()
+#4 E:\xampp\htdocs\yii1117\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 E:\xampp\htdocs\yii1117\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 E:\xampp\htdocs\yii1117\framework\web\filters\CInlineFilter.php(58): SentsmsController->filterAccessControl()
+#7 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 E:\xampp\htdocs\yii1117\framework\web\CController.php(291): CFilterChain->run()
+#9 E:\xampp\htdocs\yii1117\framework\web\CController.php(265): SentsmsController->runActionWithFilters()
+#10 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(282): SentsmsController->run()
+#11 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 E:\xampp\htdocs\gasdelivery\index.php(13): CWebApplication->run()
+REQUEST_URI=/gasdelivery/index.php?r=sentsms/create
+in E:\xampp\htdocs\gasdelivery\protected\models\sentsms.php (179)
+in E:\xampp\htdocs\gasdelivery\protected\models\sentsms.php (164)
+in E:\xampp\htdocs\gasdelivery\protected\models\sentsms.php (101)
+2016/12/27 19:19:12 [error] [php] Object of class CDbDataReader could not be converted to string (E:\xampp\htdocs\gasdelivery\protected\models\sentsms.php:179)
+Stack trace:
+#0 E:\xampp\htdocs\gasdelivery\protected\controllers\SentsmsController.php(72): sentsms->sendsms()
+#1 E:\xampp\htdocs\yii1117\framework\web\actions\CInlineAction.php(49): SentsmsController->actionCreate()
+#2 E:\xampp\htdocs\yii1117\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(133): SentsmsController->runAction()
+#4 E:\xampp\htdocs\yii1117\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 E:\xampp\htdocs\yii1117\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 E:\xampp\htdocs\yii1117\framework\web\filters\CInlineFilter.php(58): SentsmsController->filterAccessControl()
+#7 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 E:\xampp\htdocs\yii1117\framework\web\CController.php(291): CFilterChain->run()
+#9 E:\xampp\htdocs\yii1117\framework\web\CController.php(265): SentsmsController->runActionWithFilters()
+#10 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(282): SentsmsController->run()
+#11 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 E:\xampp\htdocs\gasdelivery\index.php(13): CWebApplication->run()
+REQUEST_URI=/gasdelivery/index.php?r=sentsms/create
+in E:\xampp\htdocs\gasdelivery\protected\models\sentsms.php (179)
+in E:\xampp\htdocs\gasdelivery\protected\models\sentsms.php (164)
+in E:\xampp\htdocs\gasdelivery\protected\models\sentsms.php (101)
+2016/12/27 19:22:46 [error] [php] Object of class CDbDataReader could not be converted to string (E:\xampp\htdocs\gasdelivery\protected\models\sentsms.php:179)
+Stack trace:
+#0 E:\xampp\htdocs\gasdelivery\protected\controllers\SentsmsController.php(72): sentsms->sendsms()
+#1 E:\xampp\htdocs\yii1117\framework\web\actions\CInlineAction.php(49): SentsmsController->actionCreate()
+#2 E:\xampp\htdocs\yii1117\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(133): SentsmsController->runAction()
+#4 E:\xampp\htdocs\yii1117\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 E:\xampp\htdocs\yii1117\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 E:\xampp\htdocs\yii1117\framework\web\filters\CInlineFilter.php(58): SentsmsController->filterAccessControl()
+#7 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 E:\xampp\htdocs\yii1117\framework\web\CController.php(291): CFilterChain->run()
+#9 E:\xampp\htdocs\yii1117\framework\web\CController.php(265): SentsmsController->runActionWithFilters()
+#10 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(282): SentsmsController->run()
+#11 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 E:\xampp\htdocs\gasdelivery\index.php(13): CWebApplication->run()
+REQUEST_URI=/gasdelivery/index.php?r=sentsms/create
+in E:\xampp\htdocs\gasdelivery\protected\models\sentsms.php (179)
+in E:\xampp\htdocs\gasdelivery\protected\models\sentsms.php (164)
+in E:\xampp\htdocs\gasdelivery\protected\models\sentsms.php (101)
+2016/12/27 19:24:49 [error] [php] Object of class CDbDataReader could not be converted to string (E:\xampp\htdocs\gasdelivery\protected\models\sentsms.php:165)
+Stack trace:
+#0 E:\xampp\htdocs\yii1117\framework\web\actions\CInlineAction.php(49): SentsmsController->actionCreate()
+#1 E:\xampp\htdocs\yii1117\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(133): SentsmsController->runAction()
+#3 E:\xampp\htdocs\yii1117\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 E:\xampp\htdocs\yii1117\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 E:\xampp\htdocs\yii1117\framework\web\filters\CInlineFilter.php(58): SentsmsController->filterAccessControl()
+#6 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 E:\xampp\htdocs\yii1117\framework\web\CController.php(291): CFilterChain->run()
+#8 E:\xampp\htdocs\yii1117\framework\web\CController.php(265): SentsmsController->runActionWithFilters()
+#9 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(282): SentsmsController->run()
+#10 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 E:\xampp\htdocs\gasdelivery\index.php(13): CWebApplication->run()
+REQUEST_URI=/gasdelivery/index.php?r=sentsms/create
+in E:\xampp\htdocs\gasdelivery\protected\models\sentsms.php (165)
+in E:\xampp\htdocs\gasdelivery\protected\models\sentsms.php (101)
+in E:\xampp\htdocs\gasdelivery\protected\controllers\SentsmsController.php (72)
+2016/12/28 17:05:30 [error] [exception.CException] exception 'CException' with message 'Property "sentsms.Sent Date" is not defined.' in E:\xampp\htdocs\yii1117\framework\base\CComponent.php:130
+Stack trace:
+#0 E:\xampp\htdocs\yii1117\framework\db\ar\CActiveRecord.php(145): CComponent->__get('Sent Date')
+#1 E:\xampp\htdocs\yii1117\framework\web\helpers\CHtml.php(2729): CActiveRecord->__get('Sent Date')
+#2 E:\xampp\htdocs\yii1117\framework\web\helpers\CHtml.php(2452): CHtml::resolveValue(Object(sentsms), 'Sent Date')
+#3 E:\xampp\htdocs\yii1117\framework\web\helpers\CHtml.php(1534): CHtml::activeInputField('text', Object(sentsms), 'Sent Date', Array)
+#4 E:\xampp\htdocs\yii1117\framework\zii\widgets\grid\CDataColumn.php(104): CHtml::activeTextField(Object(sentsms), 'Sent Date', Array)
+#5 E:\xampp\htdocs\yii1117\framework\zii\widgets\grid\CGridColumn.php(253): CDataColumn->getFilterCellContent()
+#6 E:\xampp\htdocs\yii1117\framework\zii\widgets\grid\CGridColumn.php(119): CGridColumn->renderFilterCellContent()
+#7 E:\xampp\htdocs\yii1117\framework\zii\widgets\grid\CGridView.php(538): CGridColumn->renderFilterCell()
+#8 E:\xampp\htdocs\yii1117\framework\zii\widgets\grid\CGridView.php(516): CGridView->renderFilter()
+#9 E:\xampp\htdocs\yii1117\framework\zii\widgets\grid\CGridView.php(486): CGridView->renderTableHeader()
+#10 E:\xampp\htdocs\yii1117\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#11 [internal function]: CBaseListView->renderSection(Array)
+#12 E:\xampp\htdocs\yii1117\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{item...')
+#13 E:\xampp\htdocs\yii1117\framework\zii\widgets\CBaseListView.php(149): CBaseListView->renderContent()
+#14 E:\xampp\htdocs\yii1117\framework\web\CBaseController.php(181): CBaseListView->run()
+#15 E:\xampp\htdocs\gasdelivery\protected\views\sentsms\admin.php(61): CBaseController->widget('zii.widgets.gri...', Array)
+#16 E:\xampp\htdocs\yii1117\framework\web\CBaseController.php(126): require('E:\\xampp\\htdocs...')
+#17 E:\xampp\htdocs\yii1117\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\xampp\\htdocs...', Array, true)
+#18 E:\xampp\htdocs\yii1117\framework\web\CController.php(869): CBaseController->renderFile('E:\\xampp\\htdocs...', Array, true)
+#19 E:\xampp\htdocs\yii1117\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#20 E:\xampp\htdocs\gasdelivery\protected\controllers\SentsmsController.php(167): CController->render('admin', Array)
+#21 E:\xampp\htdocs\yii1117\framework\web\actions\CInlineAction.php(49): SentsmsController->actionAdmin()
+#22 E:\xampp\htdocs\yii1117\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#23 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#24 E:\xampp\htdocs\yii1117\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#25 E:\xampp\htdocs\yii1117\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#26 E:\xampp\htdocs\yii1117\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#27 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#28 E:\xampp\htdocs\yii1117\framework\web\CController.php(291): CFilterChain->run()
+#29 E:\xampp\htdocs\yii1117\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#30 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(282): CController->run('admin')
+#31 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController('sentsms/admin')
+#32 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#33 E:\xampp\htdocs\gasdelivery\index.php(13): CApplication->run()
+#34 {main}
+REQUEST_URI=/gasdelivery/index.php?r=sentsms/admin
+HTTP_REFERER=http://localhost/gasdelivery/index.php?r=sentsms/index
+---
+2016/12/28 17:12:23 [error] [exception.CException] exception 'CException' with message 'Property "CGridView.sort" is not defined.' in E:\xampp\htdocs\yii1117\framework\base\CComponent.php:173
+Stack trace:
+#0 E:\xampp\htdocs\yii1117\framework\web\CWidgetFactory.php(161): CComponent->__set('sort', Array)
+#1 E:\xampp\htdocs\yii1117\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SentsmsController), 'zii.widgets.gri...', Array)
+#2 E:\xampp\htdocs\yii1117\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 E:\xampp\htdocs\gasdelivery\protected\views\sentsms\admin.php(68): CBaseController->widget('zii.widgets.gri...', Array)
+#4 E:\xampp\htdocs\yii1117\framework\web\CBaseController.php(126): require('E:\\xampp\\htdocs...')
+#5 E:\xampp\htdocs\yii1117\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\xampp\\htdocs...', Array, true)
+#6 E:\xampp\htdocs\yii1117\framework\web\CController.php(869): CBaseController->renderFile('E:\\xampp\\htdocs...', Array, true)
+#7 E:\xampp\htdocs\yii1117\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#8 E:\xampp\htdocs\gasdelivery\protected\controllers\SentsmsController.php(167): CController->render('admin', Array)
+#9 E:\xampp\htdocs\yii1117\framework\web\actions\CInlineAction.php(49): SentsmsController->actionAdmin()
+#10 E:\xampp\htdocs\yii1117\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 E:\xampp\htdocs\yii1117\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 E:\xampp\htdocs\yii1117\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 E:\xampp\htdocs\yii1117\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 E:\xampp\htdocs\yii1117\framework\web\CController.php(291): CFilterChain->run()
+#17 E:\xampp\htdocs\yii1117\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(282): CController->run('admin')
+#19 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController('sentsms/admin')
+#20 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 E:\xampp\htdocs\gasdelivery\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/gasdelivery/index.php?r=sentsms/admin
+HTTP_REFERER=http://localhost/gasdelivery/index.php?r=sentsms/index
+---
+2016/12/31 14:06:18 [error] [exception.CException] exception 'CException' with message 'ClientController cannot find the requested view "admin".' in E:\xampp\htdocs\yii1117\framework\web\CController.php:878
+Stack trace:
+#0 E:\xampp\htdocs\yii1117\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#1 E:\xampp\htdocs\gasdelivery\protected\controllers\ClientController.php(156): CController->render('admin', Array)
+#2 E:\xampp\htdocs\gasdelivery\protected\controllers\ClientController.php(141): ClientController->actionAdmin()
+#3 E:\xampp\htdocs\yii1117\framework\web\actions\CInlineAction.php(49): ClientController->actionIndex()
+#4 E:\xampp\htdocs\yii1117\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 E:\xampp\htdocs\yii1117\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\xampp\htdocs\yii1117\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 E:\xampp\htdocs\yii1117\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 E:\xampp\htdocs\yii1117\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\xampp\htdocs\yii1117\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(282): CController->run('index')
+#13 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController('client/index')
+#14 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 E:\xampp\htdocs\gasdelivery\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/gasdelivery/index.php?r=client/index
+HTTP_REFERER=http://localhost/gasdelivery/index.php
+---
+2016/12/31 14:06:46 [error] [exception.CException] exception 'CException' with message 'ClientController cannot find the requested view "admin".' in E:\xampp\htdocs\yii1117\framework\web\CController.php:878
+Stack trace:
+#0 E:\xampp\htdocs\yii1117\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#1 E:\xampp\htdocs\gasdelivery\protected\controllers\ClientController.php(156): CController->render('admin', Array)
+#2 E:\xampp\htdocs\gasdelivery\protected\controllers\ClientController.php(141): ClientController->actionAdmin()
+#3 E:\xampp\htdocs\yii1117\framework\web\actions\CInlineAction.php(49): ClientController->actionIndex()
+#4 E:\xampp\htdocs\yii1117\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 E:\xampp\htdocs\yii1117\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\xampp\htdocs\yii1117\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 E:\xampp\htdocs\yii1117\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 E:\xampp\htdocs\yii1117\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\xampp\htdocs\yii1117\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(282): CController->run('index')
+#13 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController('client/index')
+#14 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 E:\xampp\htdocs\gasdelivery\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/gasdelivery/index.php?r=client/index
+HTTP_REFERER=http://localhost/gasdelivery/index.php
+---
+2016/12/31 14:07:09 [error] [exception.CException] exception 'CException' with message 'ClientController cannot find the requested view "admin".' in E:\xampp\htdocs\yii1117\framework\web\CController.php:878
+Stack trace:
+#0 E:\xampp\htdocs\yii1117\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#1 E:\xampp\htdocs\gasdelivery\protected\controllers\ClientController.php(156): CController->render('admin', Array)
+#2 E:\xampp\htdocs\gasdelivery\protected\controllers\ClientController.php(141): ClientController->actionAdmin()
+#3 E:\xampp\htdocs\yii1117\framework\web\actions\CInlineAction.php(49): ClientController->actionIndex()
+#4 E:\xampp\htdocs\yii1117\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 E:\xampp\htdocs\yii1117\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\xampp\htdocs\yii1117\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 E:\xampp\htdocs\yii1117\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 E:\xampp\htdocs\yii1117\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\xampp\htdocs\yii1117\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(282): CController->run('index')
+#13 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController('client/index')
+#14 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 E:\xampp\htdocs\gasdelivery\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/gasdelivery/index.php?r=client/index
+HTTP_REFERER=http://localhost/gasdelivery/index.php
+---
+2016/12/31 14:07:53 [error] [exception.CException] exception 'CException' with message 'ClientController cannot find the requested view "admin".' in E:\xampp\htdocs\yii1117\framework\web\CController.php:878
+Stack trace:
+#0 E:\xampp\htdocs\yii1117\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#1 E:\xampp\htdocs\gasdelivery\protected\controllers\ClientController.php(156): CController->render('admin', Array)
+#2 E:\xampp\htdocs\gasdelivery\protected\controllers\ClientController.php(141): ClientController->actionAdmin()
+#3 E:\xampp\htdocs\yii1117\framework\web\actions\CInlineAction.php(49): ClientController->actionIndex()
+#4 E:\xampp\htdocs\yii1117\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 E:\xampp\htdocs\yii1117\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\xampp\htdocs\yii1117\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 E:\xampp\htdocs\yii1117\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 E:\xampp\htdocs\yii1117\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\xampp\htdocs\yii1117\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(282): CController->run('index')
+#13 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController('client/index')
+#14 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 E:\xampp\htdocs\gasdelivery\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/gasdelivery/index.php?r=client/index
+HTTP_REFERER=http://localhost/gasdelivery/index.php
+---
+2016/12/31 14:07:53 [error] [exception.CException] exception 'CException' with message 'ClientController cannot find the requested view "admin".' in E:\xampp\htdocs\yii1117\framework\web\CController.php:878
+Stack trace:
+#0 E:\xampp\htdocs\yii1117\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#1 E:\xampp\htdocs\gasdelivery\protected\controllers\ClientController.php(156): CController->render('admin', Array)
+#2 E:\xampp\htdocs\gasdelivery\protected\controllers\ClientController.php(141): ClientController->actionAdmin()
+#3 E:\xampp\htdocs\yii1117\framework\web\actions\CInlineAction.php(49): ClientController->actionIndex()
+#4 E:\xampp\htdocs\yii1117\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 E:\xampp\htdocs\yii1117\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\xampp\htdocs\yii1117\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 E:\xampp\htdocs\yii1117\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 E:\xampp\htdocs\yii1117\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\xampp\htdocs\yii1117\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(282): CController->run('index')
+#13 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController('client/index')
+#14 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 E:\xampp\htdocs\gasdelivery\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/gasdelivery/index.php?r=client/index
+HTTP_REFERER=http://localhost/gasdelivery/index.php
+---
+2016/12/31 14:07:53 [error] [exception.CException] exception 'CException' with message 'ClientController cannot find the requested view "admin".' in E:\xampp\htdocs\yii1117\framework\web\CController.php:878
+Stack trace:
+#0 E:\xampp\htdocs\yii1117\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#1 E:\xampp\htdocs\gasdelivery\protected\controllers\ClientController.php(156): CController->render('admin', Array)
+#2 E:\xampp\htdocs\gasdelivery\protected\controllers\ClientController.php(141): ClientController->actionAdmin()
+#3 E:\xampp\htdocs\yii1117\framework\web\actions\CInlineAction.php(49): ClientController->actionIndex()
+#4 E:\xampp\htdocs\yii1117\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 E:\xampp\htdocs\yii1117\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\xampp\htdocs\yii1117\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 E:\xampp\htdocs\yii1117\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 E:\xampp\htdocs\yii1117\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\xampp\htdocs\yii1117\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(282): CController->run('index')
+#13 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController('client/index')
+#14 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 E:\xampp\htdocs\gasdelivery\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/gasdelivery/index.php?r=client/index
+HTTP_REFERER=http://localhost/gasdelivery/index.php
+---
+2016/12/31 14:07:54 [error] [exception.CException] exception 'CException' with message 'ClientController cannot find the requested view "admin".' in E:\xampp\htdocs\yii1117\framework\web\CController.php:878
+Stack trace:
+#0 E:\xampp\htdocs\yii1117\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#1 E:\xampp\htdocs\gasdelivery\protected\controllers\ClientController.php(156): CController->render('admin', Array)
+#2 E:\xampp\htdocs\gasdelivery\protected\controllers\ClientController.php(141): ClientController->actionAdmin()
+#3 E:\xampp\htdocs\yii1117\framework\web\actions\CInlineAction.php(49): ClientController->actionIndex()
+#4 E:\xampp\htdocs\yii1117\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 E:\xampp\htdocs\yii1117\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\xampp\htdocs\yii1117\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 E:\xampp\htdocs\yii1117\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 E:\xampp\htdocs\yii1117\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\xampp\htdocs\yii1117\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(282): CController->run('index')
+#13 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController('client/index')
+#14 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 E:\xampp\htdocs\gasdelivery\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/gasdelivery/index.php?r=client/index
+HTTP_REFERER=http://localhost/gasdelivery/index.php
+---
+2016/12/31 14:07:54 [error] [exception.CException] exception 'CException' with message 'ClientController cannot find the requested view "admin".' in E:\xampp\htdocs\yii1117\framework\web\CController.php:878
+Stack trace:
+#0 E:\xampp\htdocs\yii1117\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#1 E:\xampp\htdocs\gasdelivery\protected\controllers\ClientController.php(156): CController->render('admin', Array)
+#2 E:\xampp\htdocs\gasdelivery\protected\controllers\ClientController.php(141): ClientController->actionAdmin()
+#3 E:\xampp\htdocs\yii1117\framework\web\actions\CInlineAction.php(49): ClientController->actionIndex()
+#4 E:\xampp\htdocs\yii1117\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 E:\xampp\htdocs\yii1117\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\xampp\htdocs\yii1117\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 E:\xampp\htdocs\yii1117\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 E:\xampp\htdocs\yii1117\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\xampp\htdocs\yii1117\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(282): CController->run('index')
+#13 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController('client/index')
+#14 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 E:\xampp\htdocs\gasdelivery\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/gasdelivery/index.php?r=client/index
+HTTP_REFERER=http://localhost/gasdelivery/index.php
+---
+2016/12/31 14:07:54 [error] [exception.CException] exception 'CException' with message 'ClientController cannot find the requested view "admin".' in E:\xampp\htdocs\yii1117\framework\web\CController.php:878
+Stack trace:
+#0 E:\xampp\htdocs\yii1117\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#1 E:\xampp\htdocs\gasdelivery\protected\controllers\ClientController.php(156): CController->render('admin', Array)
+#2 E:\xampp\htdocs\gasdelivery\protected\controllers\ClientController.php(141): ClientController->actionAdmin()
+#3 E:\xampp\htdocs\yii1117\framework\web\actions\CInlineAction.php(49): ClientController->actionIndex()
+#4 E:\xampp\htdocs\yii1117\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 E:\xampp\htdocs\yii1117\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\xampp\htdocs\yii1117\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 E:\xampp\htdocs\yii1117\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 E:\xampp\htdocs\yii1117\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\xampp\htdocs\yii1117\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(282): CController->run('index')
+#13 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController('client/index')
+#14 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 E:\xampp\htdocs\gasdelivery\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/gasdelivery/index.php?r=client/index
+HTTP_REFERER=http://localhost/gasdelivery/index.php
+---
+2016/12/31 14:07:54 [error] [exception.CException] exception 'CException' with message 'ClientController cannot find the requested view "admin".' in E:\xampp\htdocs\yii1117\framework\web\CController.php:878
+Stack trace:
+#0 E:\xampp\htdocs\yii1117\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#1 E:\xampp\htdocs\gasdelivery\protected\controllers\ClientController.php(156): CController->render('admin', Array)
+#2 E:\xampp\htdocs\gasdelivery\protected\controllers\ClientController.php(141): ClientController->actionAdmin()
+#3 E:\xampp\htdocs\yii1117\framework\web\actions\CInlineAction.php(49): ClientController->actionIndex()
+#4 E:\xampp\htdocs\yii1117\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 E:\xampp\htdocs\yii1117\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\xampp\htdocs\yii1117\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 E:\xampp\htdocs\yii1117\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 E:\xampp\htdocs\yii1117\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\xampp\htdocs\yii1117\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(282): CController->run('index')
+#13 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController('client/index')
+#14 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 E:\xampp\htdocs\gasdelivery\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/gasdelivery/index.php?r=client/index
+HTTP_REFERER=http://localhost/gasdelivery/index.php
+---
+2016/12/31 14:10:03 [error] [exception.CException] exception 'CException' with message 'ClientController cannot find the requested view "admin".' in E:\xampp\htdocs\yii1117\framework\web\CController.php:878
+Stack trace:
+#0 E:\xampp\htdocs\yii1117\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#1 E:\xampp\htdocs\gasdelivery\protected\controllers\ClientController.php(156): CController->render('admin', Array)
+#2 E:\xampp\htdocs\gasdelivery\protected\controllers\ClientController.php(141): ClientController->actionAdmin()
+#3 E:\xampp\htdocs\yii1117\framework\web\actions\CInlineAction.php(49): ClientController->actionIndex()
+#4 E:\xampp\htdocs\yii1117\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 E:\xampp\htdocs\yii1117\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\xampp\htdocs\yii1117\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 E:\xampp\htdocs\yii1117\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 E:\xampp\htdocs\yii1117\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\xampp\htdocs\yii1117\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(282): CController->run('index')
+#13 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController('client/index')
+#14 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 E:\xampp\htdocs\gasdelivery\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/gasdelivery/index.php?r=client/index
+HTTP_REFERER=http://localhost/gasdelivery/index.php
+---
+2016/12/31 14:10:29 [error] [exception.CException] exception 'CException' with message 'ClientController cannot find the requested view "admin".' in E:\xampp\htdocs\yii1117\framework\web\CController.php:878
+Stack trace:
+#0 E:\xampp\htdocs\yii1117\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#1 E:\xampp\htdocs\gasdelivery\protected\controllers\ClientController.php(156): CController->render('admin', Array)
+#2 E:\xampp\htdocs\gasdelivery\protected\controllers\ClientController.php(141): ClientController->actionAdmin()
+#3 E:\xampp\htdocs\yii1117\framework\web\actions\CInlineAction.php(49): ClientController->actionIndex()
+#4 E:\xampp\htdocs\yii1117\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 E:\xampp\htdocs\yii1117\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\xampp\htdocs\yii1117\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 E:\xampp\htdocs\yii1117\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 E:\xampp\htdocs\yii1117\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\xampp\htdocs\yii1117\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(282): CController->run('index')
+#13 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController('client/index')
+#14 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 E:\xampp\htdocs\gasdelivery\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/gasdelivery/index.php?r=client/index
+HTTP_REFERER=http://localhost/gasdelivery/index.php
+---
+2016/12/31 14:11:06 [error] [exception.CException] exception 'CException' with message 'ClientController cannot find the requested view "admin".' in E:\xampp\htdocs\yii1117\framework\web\CController.php:878
+Stack trace:
+#0 E:\xampp\htdocs\yii1117\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#1 E:\xampp\htdocs\gasdelivery\protected\controllers\ClientController.php(157): CController->render('admin', Array)
+#2 E:\xampp\htdocs\gasdelivery\protected\controllers\ClientController.php(142): ClientController->actionAdmin()
+#3 E:\xampp\htdocs\yii1117\framework\web\actions\CInlineAction.php(49): ClientController->actionIndex()
+#4 E:\xampp\htdocs\yii1117\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 E:\xampp\htdocs\yii1117\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\xampp\htdocs\yii1117\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 E:\xampp\htdocs\yii1117\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 E:\xampp\htdocs\yii1117\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\xampp\htdocs\yii1117\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(282): CController->run('index')
+#13 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController('client/index')
+#14 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 E:\xampp\htdocs\gasdelivery\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/gasdelivery/index.php?r=client/index
+HTTP_REFERER=http://localhost/gasdelivery/index.php
+---
+2016/12/31 14:18:36 [error] [exception.CException] exception 'CException' with message 'ClientController cannot find the requested view "admin".' in E:\xampp\htdocs\yii1117\framework\web\CController.php:878
+Stack trace:
+#0 E:\xampp\htdocs\yii1117\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#1 E:\xampp\htdocs\gasdelivery\protected\controllers\ClientController.php(156): CController->render('admin', Array)
+#2 E:\xampp\htdocs\gasdelivery\protected\controllers\ClientController.php(141): ClientController->actionAdmin()
+#3 E:\xampp\htdocs\yii1117\framework\web\actions\CInlineAction.php(49): ClientController->actionIndex()
+#4 E:\xampp\htdocs\yii1117\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 E:\xampp\htdocs\yii1117\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\xampp\htdocs\yii1117\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 E:\xampp\htdocs\yii1117\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 E:\xampp\htdocs\yii1117\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 E:\xampp\htdocs\yii1117\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\xampp\htdocs\yii1117\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(282): CController->run('index')
+#13 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController('client/index')
+#14 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 E:\xampp\htdocs\gasdelivery\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/gasdelivery/index.php?r=client/index
+HTTP_REFERER=http://localhost/gasdelivery/index.php
+---
+2016/12/31 14:30:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/login".' in E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController('user/login')
+#1 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\xampp\htdocs\gasdelivery\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gasdelivery/index.php?r=user/login
+---
+2016/12/31 14:31:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/login".' in E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController('user/login')
+#1 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\xampp\htdocs\gasdelivery\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gasdelivery/index.php?r=user/login
+---
+2016/12/31 14:31:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/login".' in E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController('user/login')
+#1 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\xampp\htdocs\gasdelivery\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gasdelivery/index.php?r=user/login
+---
+2016/12/31 14:31:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/login".' in E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\xampp\htdocs\yii1117\framework\web\CWebApplication.php(141): CWebApplication->runController('user/login')
+#1 E:\xampp\htdocs\yii1117\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\xampp\htdocs\gasdelivery\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gasdelivery/index.php?r=user/login
+---
