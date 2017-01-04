@@ -11,6 +11,7 @@
  */
 class sentsms extends CActiveRecord
 {
+	public $verifyCode;
 	/**
 	 * @return string the associated database table name
 	 */
@@ -27,12 +28,13 @@ class sentsms extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('message_id, sms_content', 'required'),
+			array('sms_content', 'required'),
 			array('message_id', 'numerical', 'integerOnly'=>true),
 			array('status', 'length', 'max'=>1),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, message_id, sms_content', 'safe', 'on'=>'search'),
+			array('verifyCode', 'CaptchaExtendedValidator', 'allowEmpty'=>!CCaptcha::checkRequirements()),
 		);
 	}
 
@@ -59,6 +61,7 @@ class sentsms extends CActiveRecord
 			'sms_content' => 'Message Content',
 			'status' => 'Status',
 			'created_datetime'=>'Sent Date',
+			'verifyCode'=>'Verification Code',
 		);
 	}
 
@@ -96,6 +99,7 @@ class sentsms extends CActiveRecord
 	public function sendsms($post)
 	{
 		$customerids = $post['sms_content'];
+		
 		$sql = "SELECT cl.id as clientid, cl.client_name, cl.mobile_number, cl.address, cr.price, db.delivery_boy_name, db.contact_number from client cl JOIN cylinder_rate cr ON( cr.id = cl.type_of_cylinder) join area ar on( ar.id = cl.area) JOIN delivery_boy db ON( db.assigned_area = cl.area) where cl.consumer_number IN(". $customerids.")";
 		$command= Yii::app()->db->createCommand($sql);
 		$results=$command->queryAll();
@@ -113,6 +117,7 @@ class sentsms extends CActiveRecord
 	
 	public function send_sms_api($clientid,$clientmobile,$clientname, $deliveryboyname, $price, $deliveryboycontact)
 	{
+		
 		if (isset($clientmobile) && $clientmobile != "")
 		{
 			// Message composing part

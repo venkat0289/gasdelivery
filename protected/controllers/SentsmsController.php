@@ -19,11 +19,28 @@ class SentsmsController extends Controller
 		);
 	}
 
+	public function actions()
+	{
+		return array(
+				// captcha action renders the CAPTCHA image displayed on the contact page
+				'captcha'=>array(
+						'class'=>'CaptchaExtendedAction',
+						//'backColor'=>0xFFFFFF,
+				),
+				// page action renders "static" pages stored under 'protected/views/site/pages'
+				// They can be accessed via: index.php?r=site/page&view=FileName
+				/* 'page'=>array(
+						'class'=>'CViewAction',
+				), */
+		);
+	}
+	
 	/**
 	 * Specifies the access control rules.
 	 * This method is used by the 'accessControl' filter.
 	 * @return array access control rules
 	 */
+	
 	public function accessRules()
 	{
 		return array(
@@ -32,7 +49,7 @@ class SentsmsController extends Controller
 				'users'=>array('*'),
 			), */
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update','index','view','delete','admin'),
+				'actions'=>array('create','update','index','view','delete','admin','captcha'),
 				'users'=>array('@'),
 			),
 			/* array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -66,16 +83,26 @@ class SentsmsController extends Controller
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
-
+		
 		if(isset($_POST['sentsms']))
 		{
-			if($model->sendsms($_POST['sentsms']))
+			$model->attributes=$_POST['sentsms'];
+			
+			if ($model->validate())
 			{
-				$this->redirect(array('admin'));
+				if($model->sendsms($_POST['sentsms']))
+				{
+					$this->redirect(array('admin'));
+				}
+			} else
+			{
+				$this->render('create', 
+						array('model'=>$model,
+						
+				),array('errors' => $model->getErrors()));
+				
 			}
-			//$model->attributes=$_POST['sentsms'];
-			//if($model->save())
-			//	$this->redirect(array('view','id'=>$model->id));
+			
 		}
 
 		$this->render('create',array(
