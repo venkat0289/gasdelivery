@@ -124,52 +124,100 @@ class sentsms extends CActiveRecord
 			//$message = "Hi ".$clientname.", Your ordered gas will be delivered by Mr.";
 			//$message .= $deliveryboyname." for the amount of Rs.".$price.". Please have this number for your delivery boy contact.";
 			//$message .= ": ". $deliveryboycontact;
+			//http://login.keshaavtechnologies.in/api/mt/SendSMS?APIKey=qkHChMpCYkqLyCuCRxShJQ&
+			//senderid=SSBGAS&channel=trans&DCS=0&flashsms=0&number=9600934808&text=testmessage&route=15
+			
 			
 			$message = "நீங்கள்  பதிவு செய்த LPG சிலிண்டர் , இன்று டெலிவரிக்கு அனுப்பப்பட்டு உள்ளது. தொடர்புக்கு - SS பாரத் கேஸ்  0452-2690 456 , 2690 567.";
 			
 			$msgid = $this->insert_sentsms_details($message,$clientid);
 			
 			// Configuration
-			$username		= "indiratrust";
+			/* $username		= "indiratrust";
 			$api_password	= "22a61evjka967fw45";
 			$sender			= "SSBGAS";
 			$domain			= "sms.foosms.com";
 			$priority		= "11";// 11-Enterprise, 12- Scrub
-			$method			= "GET";
+			$method			= "GET"; */
+			
+			$username		= "jairaj123";
+			$password	= "jairaj123";
+			$apikey = "qkHChMpCYkqLyCuCRxShJQ";
+			$sender			= "SSBGAS";
+			$domain			= "login.keshaavtechnologies.in";
+			$method			= "POST";
+			$channel = "trans";
+			$dcs = 8; // 8 - unicode
+			$flashsms = 0;
+			$route = 15;
 			
 			$username		= urlencode($username);
-			$password		= urlencode($api_password);
+			$password		= urlencode($password);
+			//$apikey		= urlencode($apikey);
 			$sender			= urlencode($sender);
-			$message		= urlencode($message);
+			//$message		= urlencode($message);
+			$data = array("user"=>$username,"password"=>$password,"senderid"=>$sender,"channel"=>$channel,"DCS"=>$dcs,"flashsms"=>$flashsms,"number"=>$clientmobile,"text"=>$message,"route"=>$route);
+			//$obj = (object)$data;
+			$parameters="APIKey=$apikey&senderid=$sender&channel=$channel&DCS=$dcs&flashsms=$flashsms&number=$clientmobile&text=$message&route=$route";
+			$url = "http://login.keshaavtechnologies.in/api/mt/SendSMS";//?$parameters
+			$query = http_build_query($data);
+			$options = array(
+					'http' => array(
+							'header' => "Content-Type: application/x-www-form-urlencoded\r\n".
+							"Content-Length: ".strlen($query)."\r\n".
+							"User-Agent:MyAgent/1.0\r\n",
+							'method'  => "POST",
+							'content' => $query,
+					),
+			);
+			$context = stream_context_create($options);
+			$result = file_get_contents($url, false, $context, -1, 40000);
 			
-			$parameters="username=$username&api_password=$api_password&sender=$sender&to=$clientmobile&message=$message&priority=$priority&unicode=1";
+			var_dump($result);
 			
-			if($method=="POST")
+			
+			/* if($method=="POST")
 			{
 				$opts = array(
 						'http'=>array(
 								'method'=>"$method",
 								'content' => "$parameters",
-								//'content-type'=>"application/x-www-form-urlencoded",
-								'header'=>"Accept-language: en\r\n" .
-								"Cookie: foo=bar\r\n"
+								'Content-Type'=>"text/html; charset=utf-8",
+								//'header'=>"Accept-language: en\r\n" .
+								//"Cookie: foo=bar\r\n"
 						)
 				);
 			
 				$context = stream_context_create($opts);
 			
-				$fp = fopen("http://$domain/pushsms.php", "r", false, $context);
+				$fp = fopen("http://login.keshaavtechnologies.in/api/mt/SendSMS", "r", false, $context);
 			}
-			else
-			{
-				$fp = fopen("http://$domain/pushsms.php?$parameters", "r");
-			}
+			/*else
+			{ */
+				//$fp = fopen("http://login.keshaavtechnologies.in/api/mt/SendSMS?$parameters", "r");
+			//}
 			
-			$response = stream_get_contents($fp);
+			//$var = "http://login.keshaavtechnologies.in/api/mt/SendSMS";//?$parameters
+			/* $homepage = file_get_contents($var);
+			var_dump($homepage);
+			echo $var;exit();*/
+			/* $response = stream_get_contents($fp);
+			file_put_content('test.txt',print_r($response));
 			fpassthru($fp);
-			fclose($fp);
+			fclose($fp); */
 			
-			
+			/* $ch = curl_init();
+			curl_setopt($ch, CURLOPT_URL, $var);
+			curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+			curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true );
+			// This is what solved the issue (Accepting gzip encoding)
+			curl_setopt($ch, CURLOPT_ENCODING, "gzip,deflate");
+			$response = curl_exec($ch);
+			curl_close($ch);
+			echo $response; */
+			exit();
+						
 			if($response=="")
 				$response = "Process Failed! Please check your domain, username and password.";
 		
