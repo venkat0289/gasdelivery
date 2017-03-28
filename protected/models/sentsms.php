@@ -2,13 +2,13 @@
 
 /**
  * This is the model class for table "sent_sms".
- *
- * The followings are the available columns in table 'sent_sms':
- * @property integer $id
- * @property integer $message_id
- * @property string $sms_content
- * @property string $status
- */
+*
+* The followings are the available columns in table 'sent_sms':
+* @property integer $id
+* @property integer $message_id
+* @property string $sms_content
+* @property string $status
+*/
 class sentsms extends CActiveRecord
 {
 	public $verifyCode;
@@ -28,13 +28,13 @@ class sentsms extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('sms_content', 'required'),
-			array('message_id', 'numerical', 'integerOnly'=>true),
-			array('status', 'length', 'max'=>1),
-			// The following rule is used by search().
-			// @todo Please remove those attributes that should not be searched.
-			array('id, message_id, sms_content', 'safe', 'on'=>'search'),
-			array('verifyCode', 'CaptchaExtendedValidator', 'allowEmpty'=>!CCaptcha::checkRequirements()),
+				array('sms_content', 'required'),
+				array('message_id', 'numerical', 'integerOnly'=>true),
+				array('status', 'length', 'max'=>1),
+				// The following rule is used by search().
+				// @todo Please remove those attributes that should not be searched.
+				array('id, message_id, sms_content', 'safe', 'on'=>'search'),
+				array('verifyCode', 'CaptchaExtendedValidator', 'allowEmpty'=>!CCaptcha::checkRequirements()),
 		);
 	}
 
@@ -56,12 +56,12 @@ class sentsms extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
-			'message_id' => 'Message Id',
-			'sms_content' => 'Message Content',
-			'status' => 'Status',
-			'created_datetime'=>'Sent Date',
-			'verifyCode'=>'Verification Code',
+				'id' => 'ID',
+				'message_id' => 'Message Id',
+				'sms_content' => 'Message Content',
+				'status' => 'Status',
+				'created_datetime'=>'Sent Date',
+				'verifyCode'=>'Verification Code',
 		);
 	}
 
@@ -89,7 +89,7 @@ class sentsms extends CActiveRecord
 		//$criteria->compare('status',$this->status,true);
 		//$criteria->compare('created_datetime',$this->created_datetime,true);
 		return new CActiveDataProvider($this, array(
-			'criteria'=>$criteria,
+				'criteria'=>$criteria,
 				'sort'=>array(
 						'defaultOrder'=>'created_datetime DESC',
 				),
@@ -100,81 +100,105 @@ class sentsms extends CActiveRecord
 	{
 		$customerids = $post['sms_content'];
 		
-		$sql = "SELECT cl.id as clientid, cl.client_name, cl.mobile_number, cl.address, cr.price, db.delivery_boy_name, db.contact_number from client cl JOIN cylinder_rate cr ON( cr.id = cl.type_of_cylinder) join area ar on( ar.id = cl.area) JOIN delivery_boy db ON( db.assigned_area = cl.area) where cl.consumer_number IN(". $customerids.")";
+		//$message = "நீங்கள்  பதிவு செய்த LPG சிலிண்டர் , இன்று டெலிவரிக்கு அனுப்பப்பட்டு உள்ளது. தொடர்புக்கு - SS பாரத் கேஸ்  0452-2690 456 , 2690 567.";
+		$message = "Dear Customer, your booked Bharat gas has been dispatched today for delivery . contact - SS bharat gas 04522690456 , 04522690567";
+
+		$sql = "SELECT cl.id as clientid, cl.mobile_number from client cl where cl.consumer_number IN(". $customerids.")";
 		$command= Yii::app()->db->createCommand($sql);
 		$results=$command->queryAll();
-		if(count($results) >0)
+		
+		if(count($results) > 1)
 		{
 			foreach ($results as $idx=>$val)
 			{
-				$this->send_sms_api($val['clientid'],$val['mobile_number'],$val['client_name'],$val['delivery_boy_name'],$val['price'],$val['contact_number']);
+				$arr[] = $val['mobile_number'];
+				$msgid = $this->insert_sentsms_details($message,$val['clientid']);
 			}
 			
-		} 
+			$numbers = implode(",",$arr);
+			
+		}
+		else
+		{
+			$msgid = $this->insert_sentsms_details($message,$results[0]['clientid']);
+			$numbers = $results[0]['mobile_number'];
+		}
+		
+		
+
+		$this->send_sms_api($numbers);
+
+		/* if(count($results) >0)
+		 {
+			foreach ($results as $idx=>$val)
+			{
+			$this->send_sms_api($val['clientid'],$val['mobile_number'],$val['client_name'],$val['delivery_boy_name'],$val['price'],$val['contact_number']);
+			}
+				
+			}  */
 
 		return true;
 	}
-	
-	public function send_sms_api($clientid,$clientmobile,$clientname, $deliveryboyname, $price, $deliveryboycontact)
+
+	public function send_sms_api($numbers)
 	{
-		
-		if (isset($clientmobile) && $clientmobile != "")
+
+		if (isset($numbers) && $numbers != "")
 		{
-					
-			$message = "நீங்கள்  பதிவு செய்த LPG சிலிண்டர் , இன்று டெலிவரிக்கு அனுப்பப்பட்டு உள்ளது. தொடர்புக்கு - SS பாரத் கேஸ்  0452-2690 456 , 2690 567.";
-			
-			$msgid = $this->insert_sentsms_details($message,$clientid);
 				
-			$username		= "jairaj123";
-			$password	= "jairaj123";
-			$apikey = "qkHChMpCYkqLyCuCRxShJQ";
-			$sender			= "SSBGAS";
-			$domain			= "login.keshaavtechnologies.in";
-			$method			= "POST";
-			$channel = "trans";
-			$dcs = 8; // 8 - unicode
-			$flashsms = 0;
-			$route = 15;
+			$message = "Dear Customer, your booked Bharat gas has been dispatched today for delivery . contact - SS bharat gas 04522690456 , 04522690567";
 			
+
+			$username		= "deltawavehttp";
+			$password	= "deltawav";
+			//$apikey = "qkHChMpCYkqLyCuCRxShJQ";
+			$sender			= "SSBGAS";
+			//$domain			= "login.keshaavtechnologies.in";
+			$method			= "POST";
+			//$channel = "trans";
+			//$dcs = 8; // 8 - unicode
+			//$flashsms = 0;
+			//$route = 15;
+				
 			$username		= urlencode($username);
 			$password		= urlencode($password);
-			$apikey		= urlencode($apikey);
+			//$apikey		= urlencode($apikey);
 			$sender			= urlencode($sender);
 			$message		= urlencode($message);
 			//$parameters = "APIKey=qkHChMpCYkqLyCuCRxShJQ&senderid=SSBGAS&channel=trans&DCS=8&flashsms=0&number=9600934808&text=hello&route=15";
-			$parameters = "APIKey=".$apikey."&senderid=".$sender."&channel=".$channel."&DCS=".$dcs."&flashsms=".$flashsms."&number=".$clientmobile."&text=".$message."&route=".$route;
-			$fp = fopen("http://login.keshaavtechnologies.in/api/mt/SendSMS?$parameters", "r");
+			$parameters = "username=".$username."&password=".$password."&to=".$numbers."&from=".$sender."&text=".$message."&category=bulk";
+			$fp = fopen("http://www.myvaluefirst.com/smpp/sendsms?$parameters", "r");
 			$response = stream_get_contents($fp);
-			
+				
 			fpassthru($fp);
 			fclose($fp);
-			$result = json_decode($response);
-			if( isset($result->ErrorMessage) && $result->ErrorMessage == "Done")
+			/* $result = json_decode($response);
+			if( isset($result))
 			{
 				$errmsg = "Success";
 			}
-			else 
-				$errmsg = "Process Failed! Please check your domain, username and password.";
-		
-						
-			$this->update_message_response($msgid,$result->MessageData[0]->MessageId, $errmsg);
+			else
+				$errmsg = "Process Failed! Please check your domain, username and password."; */
+
+
+			//$this->update_message_response($msgid, $response);
 		}
-		
+
 	}
-	
+
 	public function insert_sentsms_details($message,$clientid)
 	{
 		$sql = "insert into sent_sms(client_id,sms_content) values(".$clientid.",'".$message."')";
 		$command= Yii::app()->db->createCommand($sql);
 		$command->query();
 		$lastID = Yii::app()->db->getLastInsertID();
-		
+
 		return $lastID;
 	}
-	
-	public function update_message_response($id, $messageid,$response)
+
+	public function update_message_response($id,$response)
 	{
-		$sql = "update sent_sms set comment = '".$response."',message_id='".$messageid."' where id = ".$id;
+		$sql = "update sent_sms set comment = '".$response."' where id = ".$id;
 		$command= Yii::app()->db->createCommand($sql);
 		$command->query();
 	}
